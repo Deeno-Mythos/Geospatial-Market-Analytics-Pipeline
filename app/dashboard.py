@@ -1,4 +1,12 @@
 import json
+import sys
+from pathlib import Path
+
+# Streamlit adds the entrypoint's directory to sys.path. A nested entrypoint
+# also needs the repository root to import the app and pipeline packages.
+repository_root = str(Path(__file__).resolve().parents[1])
+if repository_root not in sys.path:
+    sys.path.insert(0, repository_root)
 
 import polars as pl
 import plotly.express as px
@@ -6,6 +14,7 @@ import streamlit as st
 
 from app.maps import BRAND_COLORS, location_map
 from app.economics import render_economics
+from app.data import dashboard_data_dir
 from src.pipelines.config import get_settings, project_path
 from src.pipelines.transform import OUTPUT_COLUMNS, OUTPUT_SCHEMA, REQUIRED_COLUMNS
 
@@ -14,7 +23,9 @@ st.title("Geospatial Market Analytics")
 st.caption("Explore normalized business locations and compare market coverage.")
 
 settings = get_settings()
-output_dir = project_path(settings.output_dir)
+output_dir = dashboard_data_dir(project_path(settings.output_dir))
+if output_dir != project_path(settings.output_dir):
+    st.caption("Showing the bundled Philippine data snapshot. Collection dates and coverage are listed below.")
 parquet_path = output_dir / "market_locations.parquet"
 csv_path = output_dir / "market_locations.csv"
 

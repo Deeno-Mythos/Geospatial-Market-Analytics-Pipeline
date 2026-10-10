@@ -1,0 +1,22 @@
+{
+  "price_rows": 630,
+  "price_rows_by_brand": {
+    "KFC": 298,
+    "Jollibee": 320,
+    "McDonald's": 12
+  },
+  "coverage_note": "Public reference prices, not verified branch quotes. Jollibee collection uses the first page of each menu category and may be incomplete. KFC keeps pickup and delivery prices separate. McDo prices cover the sourced Snack & Match promotion only.",
+  "sources": [
+    "https://www.jollibee.com.ph/menu",
+    "https://www.kfc.com.ph/en/menu",
+    "https://www.mcdonalds.com.ph/press-center/mcsavers-snack-and-match"
+  ],
+  "completed_at_utc": "2026-10-10T16:48:22.789247+00:00",
+  "financial_checked_on": "2026-10-11",
+  "financial_note": "Dated, manually verified public disclosures. Reporting entities, geographies and periods differ. Revenue, systemwide sales and profit are distinct measures; these figures must not be divided by the collected location counts to estimate branch revenue.",
+  "financial_gaps": {
+    "Jollibee": "Philippine Jollibee brand revenue and individual branch revenue were not verified. The figures shown cover Jollibee Group worldwide across its brands.",
+    "McDonald's": "Individual branch revenue was not verified. FY2024 is the full-year operator disclosure verified here. AGI deconsolidated GADC in March 2025, so its 2025 segment contribution is not a full-year McDonald's Philippines revenue figure.",
+    "KFC": "KFC Philippines revenue and individual branch revenue were not verified in the public sources reviewed; no amount is assigned."
+  }
+}

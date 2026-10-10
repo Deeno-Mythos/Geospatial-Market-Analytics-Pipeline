@@ -1,0 +1,42 @@
+{
+  "input_records": 2247,
+  "valid_locations": 2247,
+  "dropped_invalid_coordinates": 0,
+  "dataset_metadata": {
+    "dataset": "Philippine fast food locations",
+    "source_counts": {
+      "Jollibee": 1083,
+      "McDonald's": 805,
+      "KFC": 360
+    },
+    "retrieved_at_utc": {
+      "Jollibee": "2026-10-10T16:13:57.319661+00:00",
+      "McDonald's": "2026-10-10T16:12:56.304457+00:00",
+      "KFC": "2026-10-10T16:10:18.797453+00:00"
+    },
+    "excluded_coordinates": 1,
+    "included_counts": {
+      "Jollibee": 1083,
+      "McDonald's": 805,
+      "KFC": 359
+    },
+    "boundary_sources": [
+      {
+        "url": "https://www.geoboundaries.org/api/current/gbOpen/PHL/ADM2/",
+        "geometry_url": "https://github.com/wmgeolab/geoBoundaries/raw/41af8f1/releaseData/gbOpen/PHL/ADM2/geoBoundaries-PHL-ADM2_simplified.geojson",
+        "year": "2020",
+        "license": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)",
+        "source": "National Mapping and Resource Information Authority (NAMRIA), Philippines Statistics Authority (PSA), OCHA Philippines"
+      },
+      {
+        "url": "https://www.geoboundaries.org/api/current/gbOpen/PHL/ADM3/",
+        "geometry_url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/PHL/ADM3/geoBoundaries-PHL-ADM3_simplified.geojson",
+        "year": "2020",
+        "license": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)",
+        "source": "National Mapping and Resource Information Authority (NAMRIA), Philippines Statistics Authority (PSA), OCHA Philippines"
+      }
+    ],
+    "coverage_note": "Official locator entries with usable coordinates; coverage may be incomplete. Ratings and review counts are unavailable. Geographic labels use 2020 reference boundaries."
+  },
+  "completed_at_utc": "2026-10-10T16:32:31.028981+00:00"
+}

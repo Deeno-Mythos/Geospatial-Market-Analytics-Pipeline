@@ -118,6 +118,24 @@ Open `http://localhost:8501`. The local `data` directory is mounted into the con
 
 The Docker build excludes `.env`, local data, and Git history. Compose supplies the configured cloud credentials at runtime.
 
+## Streamlit Community Cloud
+
+Deploy this GitHub repository with **main file path `app/dashboard.py`**, the branch containing these changes, and Python **3.12 or 3.13**. The entrypoint resolves the repository root before importing local packages, so it works when launched as a nested script. Community Cloud finds the root `requirements.txt` automatically ([deployment documentation](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/file-organization)).
+
+The app includes a public snapshot in `reference_data/philippines_snapshot/`: 2,247 Philippine locations, 630 price references, and their source/coverage metadata. When the default `data/processed/` output is absent, the dashboard reads this bundled snapshot, including the Prices & revenue tab. No pipeline run, scraping request, secret or API key is required at startup. Local pipeline output takes precedence when present; a custom `PIPELINE_OUTPUT_DIR` still requires its own output files.
+
+The bundled data is a dated snapshot, not a live feed. To update it, collect fresh public data locally and export only the selected public files:
+
+```powershell
+python -m flows.orchestrator --source ph-fastfood --refresh
+python -m src.pipelines.economics --refresh
+python -m src.pipelines.snapshot
+```
+
+Commit `reference_data/philippines_snapshot/` along with the code. Keep `.env` and `data/` ignored. The snapshot exporter validates Philippine source provenance and removes local output paths from the run report. Financial disclosures remain separately maintained in `reference_data/philippines_financials.json`.
+
+For an existing deployment, push the changes to the branch selected in Community Cloud; Streamlit picks up repository updates automatically ([deployment documentation](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/deploy)). If the old error persists, use **Manage app → Reboot**. Keep the existing main file path `app/dashboard.py`.
+
 ## Development
 
 Run the focused test suite with:
