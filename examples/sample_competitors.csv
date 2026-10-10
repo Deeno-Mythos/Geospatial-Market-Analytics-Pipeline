@@ -1,0 +1,6 @@
+name,category,address,city,region,postal_code,country,latitude,longitude,rating,reviewsCount,website,url
+Northstar Coffee,Cafe,101 Congress Ave,Austin,TX,78701,US,30.2672,-97.7431,4.6,820,https://example.com/northstar,https://example.com/northstar
+Riverbend Roasters,Cafe,220 S Lamar Blvd,Austin,TX,78704,US,30.2601,-97.7504,4.3,315,https://example.com/riverbend,https://example.com/riverbend
+Juniper Market,Grocery,500 E 6th St,Austin,TX,78701,US,30.2669,-97.7351,4.1,192,https://example.com/juniper,https://example.com/juniper
+Hill Country Grocers,Grocery,1400 S Congress Ave,Austin,TX,78704,US,30.2508,-97.7491,4.4,274,https://example.com/hill-country,https://example.com/hill-country
+Lakeside Coffee,Cafe,900 W 2nd St,Austin,TX,78703,US,30.2675,-97.7549,4.7,508,https://example.com/lakeside,https://example.com/lakeside

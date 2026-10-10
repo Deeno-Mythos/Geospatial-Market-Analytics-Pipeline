@@ -1,0 +1,77 @@
+{
+  "checked_on": "2026-10-11",
+  "coverage_note": "Dated, manually verified public disclosures. Reporting entities, geographies and periods differ. Revenue, systemwide sales and profit are distinct measures; these figures must not be divided by the collected location counts to estimate branch revenue.",
+  "gaps": {
+    "Jollibee": "Philippine Jollibee brand revenue and individual branch revenue were not verified. The figures shown cover Jollibee Group worldwide across its brands.",
+    "McDonald's": "Individual branch revenue was not verified. FY2024 is the full-year operator disclosure verified here. AGI deconsolidated GADC in March 2025, so its 2025 segment contribution is not a full-year McDonald's Philippines revenue figure.",
+    "KFC": "KFC Philippines revenue and individual branch revenue were not verified in the public sources reviewed; no amount is assigned."
+  },
+  "records": [
+    {
+      "brand": "Jollibee",
+      "entity": "Jollibee Foods Corporation / Jollibee Group",
+      "metric": "Consolidated revenue",
+      "amount_php": 305100000000,
+      "period": "FY2025",
+      "scope": "Worldwide; all group brands",
+      "source_url": "https://www.jollibeegroup.com/news/jollibee-group-reports-record-2025-performance-outlines-disciplined-growth-priorities-at-2026-annual-stockholders-meeting/",
+      "source_published_on": "2026-06-26",
+      "notes": "Rounded figure from the 2026 ASM release; includes the group's multi-brand, multi-market portfolio."
+    },
+    {
+      "brand": "Jollibee",
+      "entity": "Jollibee Foods Corporation / Jollibee Group",
+      "metric": "Systemwide sales",
+      "amount_php": 455100000000,
+      "period": "FY2025",
+      "scope": "Worldwide; all group brands",
+      "source_url": "https://www.jollibeegroup.com/news/jollibee-group-reports-record-2025-performance-outlines-disciplined-growth-priorities-at-2026-annual-stockholders-meeting/",
+      "source_published_on": "2026-06-26",
+      "notes": "Consumer sales across company-operated and franchised restaurants; distinct from consolidated revenue."
+    },
+    {
+      "brand": "Jollibee",
+      "entity": "Jollibee Foods Corporation / Jollibee Group",
+      "metric": "Net income attributable to parent equity holders",
+      "amount_php": 10900000000,
+      "period": "FY2025",
+      "scope": "Worldwide; all group brands",
+      "source_url": "https://www.jollibeegroup.com/news/jollibee-group-reports-record-2025-performance-outlines-disciplined-growth-priorities-at-2026-annual-stockholders-meeting/",
+      "source_published_on": "2026-06-26",
+      "notes": "Profit measure after expenses; distinct from sales or revenue."
+    },
+    {
+      "brand": "McDonald's",
+      "entity": "Golden Arches Development Corporation (GADC)",
+      "metric": "Sales revenue",
+      "amount_php": 47900000000,
+      "period": "FY2024",
+      "scope": "Philippine McDonald's operator",
+      "source_url": "https://allianceglobalinc.com/sites/default/files/2025-05/AGI%20FY2024%20Presentation%20050225.pdf#page=37",
+      "source_published_on": "2025-05-02",
+      "notes": "AGI FY2024 presentation, page 37. Includes company restaurant sales and rent, royalties and other revenue; rounded to Php billions."
+    },
+    {
+      "brand": "McDonald's",
+      "entity": "Golden Arches Development Corporation (GADC)",
+      "metric": "Systemwide sales",
+      "amount_php": 81400000000,
+      "period": "FY2024",
+      "scope": "Philippine McDonald's restaurant system",
+      "source_url": "https://allianceglobalinc.com/sites/default/files/2025-05/AGI%20FY2024%20Presentation%20050225.pdf#page=37",
+      "source_published_on": "2025-05-02",
+      "notes": "AGI FY2024 presentation, page 37. Includes company-operated and franchised restaurant sales; distinct from operator revenue."
+    },
+    {
+      "brand": "McDonald's",
+      "entity": "Golden Arches Development Corporation (GADC)",
+      "metric": "Attributable profit",
+      "amount_php": 2400000000,
+      "period": "FY2024",
+      "scope": "Philippine McDonald's operator",
+      "source_url": "https://allianceglobalinc.com/sites/default/files/2025-05/AGI%20FY2024%20Presentation%20050225.pdf#page=37",
+      "source_published_on": "2025-05-02",
+      "notes": "AGI FY2024 presentation, page 37. Profit measure after expenses; rounded to Php billions."
+    }
+  ]
+}

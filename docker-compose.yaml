@@ -1,0 +1,22 @@
+services:
+  dashboard:
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "8501:8501"
+    environment:
+      PIPELINE_OUTPUT_DIR: /app/data/processed
+      PIPELINE_SOURCE: ${PIPELINE_SOURCE:-auto}
+      APIFY_TOKEN: ${APIFY_TOKEN:-}
+      APIFY_ACTOR_ID: ${APIFY_ACTOR_ID:-}
+      APIFY_INPUT_JSON: ${APIFY_INPUT_JSON:-}
+      MOTHERDUCK_TOKEN: ${MOTHERDUCK_TOKEN:-}
+      MOTHERDUCK_DATABASE: ${MOTHERDUCK_DATABASE:-}
+      R2_ACCOUNT_ID: ${R2_ACCOUNT_ID:-}
+      R2_ACCESS_KEY_ID: ${R2_ACCESS_KEY_ID:-}
+      R2_SECRET_ACCESS_KEY: ${R2_SECRET_ACCESS_KEY:-}
+      R2_BUCKET: ${R2_BUCKET:-}
+      R2_ENDPOINT_URL: ${R2_ENDPOINT_URL:-}
+    volumes:
+      - ./data:/app/data
